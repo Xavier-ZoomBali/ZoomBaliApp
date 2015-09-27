@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">Zoom Bali</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="promo_text">Your Travel Maps</string>
 </resources>

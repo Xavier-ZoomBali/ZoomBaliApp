@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/coolor_splash_bg">
+
+    <ImageView
+        android:id="@+id/imgFavicon"
+        android:layout_width="@dimen/favicon_height_width"
+        android:layout_height="@dimen/favicon_height_width"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/favicon_top_margin"
+        android:src="@mipmap/ic_launcher"/>
+
+    <ImageView
+        android:id="@+id/imgPromo"
+        android:layout_width="@dimen/promo_width"
+        android:layout_height="@dimen/promo_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/favicon_top_margin"
+        android:src="@drawable/ic_promo"
+        android:layout_below="@+id/imgFavicon"/>
+
+    <TextView
+        android:id="@+id/promoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/value_25sp"
+        android:text="@string/promo_text"
+        android:textColor="@color/promo_text_color"
+        android:layout_below="@+id/imgPromo"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgLoader"
+        android:layout_width="@dimen/laoder_height_width"
+        android:layout_height="@dimen/laoder_height_width"
+        android:src="@drawable/ic_loader"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:layout_below="@+id/promoTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/value_10dp"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/rider_width_height"
+        android:layout_height="@dimen/rider_width_height"
+        android:src="@drawable/img_rider"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imgLoader"/>
+
+</RelativeLayout>
